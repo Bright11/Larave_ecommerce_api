@@ -23,7 +23,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 our first resource
 Route::Resource('/product','App\Http\Controllers\ProductController');
 */
-//After creatingeach route, we should run
+//After creating each route, we should run
 //php artisan route:list
 Route::apiResource('/product','App\Http\Controllers\ProductController');
 Route::apiResource('/{product}/reviews','App\Http\Controllers\ReviewController');
